@@ -13,5 +13,5 @@ RUN ln -s /firefox/firefox-bin /usr/bin/firefox
 RUN apt-get install -y chromium-browser
 ADD chrome-nosandbox /usr/bin/chrome
 RUN chmod +x /usr/bin/chrome
-
-USER meteor
+ADD chrome-nosandbox /usr/bin/google-chrome
+RUN chmod +x /usr/bin/google-chrome
