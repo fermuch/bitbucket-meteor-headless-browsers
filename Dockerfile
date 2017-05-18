@@ -15,3 +15,6 @@ ADD chrome-nosandbox /usr/bin/chrome
 RUN chmod +x /usr/bin/chrome
 ADD chrome-nosandbox /usr/bin/google-chrome
 RUN chmod +x /usr/bin/google-chrome
+
+# Install node & npm
+RUN apt-get install -y nodejs npm nodejs-legacy
